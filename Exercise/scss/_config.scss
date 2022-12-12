@@ -1,4 +1,4 @@
-$primary-color: #444;
+$primary-color: rgb(68, 68, 68);
 $secondary-color: red;
 $shot-home-image: true;
 $home-image: url(../img/background.jpg); //MISSING
@@ -27,6 +27,15 @@ $portrait-image-small: rgb(255, 255, 255); //(link to file or link to pic)
                 z-index: -1; //how close it is viewer
             }
         }
+    }
+}
+
+//Set Text Color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return black;
+    } @else {
+        @return white;
     }
 }
 
