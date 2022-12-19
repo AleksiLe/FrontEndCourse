@@ -1,0 +1,78 @@
+//Very Widescreen
+@include mediaXxl{    
+    .products {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+//Widescreen
+@include mediaXl {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+//Desktop and Laptops
+@include mediaLg {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+// Tablets & Small Laptops
+@include mediaMd {
+    .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    .about-info {
+        grid-template-areas: 
+            'bio job4'
+            'job1 job2'
+            'job3 job3' ;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .boxes {
+        margin: 0px;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+//SmartPhones
+@include mediaSm {
+    .about-info {
+        grid-template-areas: 
+            'bio'
+            'job4'
+            'job1'
+            'job2'
+            'job3' ;
+
+        grid-template-columns: 1fr;
+    }
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        &-nav {
+            float:none;
+            width:100%;
+
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+}
+
