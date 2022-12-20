@@ -4,4 +4,6 @@ run it by going to /docs/index.html and double clicking it should open home page
 
 Project point was learn to do responsive front end project that can adapt different screen sizes and make logical shanges to web site appareance.
 
+Link to video: https://youtu.be/9xPd9pZ7LR0
+
 @AleksiLe
